@@ -9,6 +9,7 @@ Before start
 For now this APP only available in Chrome.
 
 Before you use it, ensure you have enabled the "all file access from files" flags of Chrome.
+
 If not, do the following:
 
     1.In Windows, right click Chrome icon select property;
