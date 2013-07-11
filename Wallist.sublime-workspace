@@ -23,7 +23,7 @@
 			"file": "js/wallist.js",
 			"settings":
 			{
-				"buffer_size": 6220,
+				"buffer_size": 6287,
 				"line_ending": "Windows"
 			}
 		}
@@ -55,6 +55,7 @@
 	},
 	"file_history":
 	[
+		"/D/Program Files/Github/Wallist/README.md",
 		"/D/Program Files/Github/Wallist/index.html",
 		"/D/Program Files/Github/Wallist/js/wallist.js",
 		"/D/Program Files/Github/Wallist/data/data.json",
@@ -114,15 +115,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6220,
+						"buffer_size": 6287,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1276,
-								1376
+								4894,
+								4894
 							]
 						],
 						"settings":
@@ -132,7 +133,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 540.0,
+						"translation.y": 2556.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

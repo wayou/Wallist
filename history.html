@@ -9,8 +9,29 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/knockout-2.2.1.js"></script>
     <script type="text/javascript">
+var events=null;
+
     $(function  () {
-		$(".navBtn").button();
+
+		$(".navBtn").button().click(function(e){
+    window.location.href=$(this).find("a").attr("href");
+});
+
+    events=$.parseJSON(localStorage.getItem("events"));
+var deletedEvents=[];
+$.each(events,function(i,item){
+    if (item.status==1) {
+        deletedEvents.push(item);
+    };
+})
+
+function EventViewModel() {
+    var self = this;
+    // Editable data
+    self.events = ko.observableArray(deletedEvents);
+}
+
+ko.applyBindings(new EventViewModel());
     })
     </script>
 
@@ -30,17 +51,23 @@
         </ul>
     </nav>
     <div id="main">
-    <table>
-    	<tr>
-    		<th>Subject</th>
-    		<th>Date Done</th>
-    	</tr>
-    	<tr>
-    		<td></td>
-    		<td></td>
-    	</tr>
-    </table>
-       
+        <table>
+        	 <thead>
+                 <tr>
+                <th>Subject</th>
+                <th>Date Create</th>
+                <th>Date Done</th>
+                <th></th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: events">
+                <tr>
+                    <td data-bind="text: subject"></td>
+                    <td data-bind="text: dateCreate"></td>
+                    <td data-bind="text: dateDone"></td>
+                </tr>    
+            </tbody>
+        </table>
      </div>  
 <footer>
         HTML5 demo application
