@@ -50,8 +50,8 @@ $(function() {
     $("#createWindow").dialog();
     $("#confirmDel").dialog({autoOpen:false});
 
-    var sampleData=readJsonEvents("data/data.json");
-    storeEvents(JSON.stringify(sampleData));
+    // var sampleData=readJsonEvents("data/data.json");
+    // storeEvents(JSON.stringify(sampleData));
     var events=$.parseJSON(localStorage.getItem("events"));
 
 //initial application, read existing events into the page
@@ -96,16 +96,51 @@ for (var i = events.length - 1; i >= 0; i--) {
 
 };
 
+
 $( "#create" ).button().click(function( e ) {
-          $('#CreateWin').dialog({
-             width:360,
+    var suject=$("#subject-create");
+    suject.change(function(e){
+         if ($.trim(suject.val())!=="") {
+                    suject.removeClass("ui-state-error");
+                };
+    })
+    var importance=$("#importance-create");
+    var detail=$("#detail-create");
+    $('#CreateWin').dialog({
+            width:360,
             modal: true,
             buttons: [ { text: "Ok", click: function() {
-                //do save the new event
+                //the subject field is required
+                if ($.trim(suject.val())=="") {
+                    suject.addClass("ui-state-error");
+                    return;
+                };
+                //json items CRUD
+                //http://stackoverflow.com/questions/4538269/adding-removing-items-from-json-data-with-jquery
+                var eventId=generateId();
+                var eventSubject=suject.val();
+                var eventImportance=importance.val();
+                var eventDetail=detail.val();
+                var eventDateCreate=new Date();
+                var eventDateDone="";
+                var eventStatus="0";
+                events.push({id:eventId,subject:eventSubject,importance:eventImportance,detail:eventDetail,
+                    dateCreate:eventDateCreate,dateDone:eventDateDone,status:eventStatus
+                })
+                storeEvents(JSON.stringify(events));
 
+                debugger;
+
+                // save the new event
              $( this ).dialog( "close" ); }},
-            { text: "CANCEL", click: function() { $( this ).dialog( "close" ); }}] 
-          }); 
+            { text: "CANCEL", click: function() { $( this ).dialog( "close" ); }}] ,
+             close: function() {
+                //clear all value before close
+                suject.val("").removeClass("ui-state-error");
+                importance.val(0);
+                detail.val("");
+            }
+          }).dialog("open");
       });   
 
 $( ".deleteEvent" ).click(function( e ) {

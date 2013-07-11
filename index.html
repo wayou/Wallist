@@ -56,29 +56,29 @@
         HTML5 demo application
     </footer>
     
- <div id="CreateWin" title="Create" style="display:none;width:500px;"> 
+ <div id="CreateWin" title="Create" style="display:none;"> 
  <table>
      <tr>
-         <td>Subject:</td>
+         <td><span style="color:red">*</span> Subject:</td>
          <td>
-             <input type="text">
+             <input id="subject-create" type="text">
          </td>
      </tr>
      <tr>
          <td>Importance:</td>
          <td> 
-             <select >
-                <option value="0">Importan&Urgent</option>
+             <select id="importance-create" >
+                <option value="0">Normal</option>
                 <option value="1">Importan</option>
                 <option value="2">Urgent</option>
-                <option value="3">Normal</option>
+                <option value="3">Importan&Urgent</option>
             </select>
         </td>
      </tr>
      <tr>
          <td>Detail:</td>
          <td>
-             <textarea  rows="4" cols="21" style="max-width:210px;"></textarea>
+             <textarea id="detail-create" rows="4" cols="21" style="max-width:210px;"></textarea>
          </td>
      </tr>
  </table>
