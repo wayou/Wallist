@@ -1,17 +1,51 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>
-			History
-		</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-		<script src="jquery.min.js">
-		</script>
-	</head>
-	<body>
-		<h1>
-			History
-		</h1>
-	</body>
+<head>
+    <title>History
+    </title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/jquery-ui.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/knockout-2.2.1.js"></script>
+    <script type="text/javascript">
+    $(function  () {
+		$(".navBtn").button();
+    })
+    </script>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <button class="navBtn"><a href="index.html">Home</a></button>
+            </li>
+            <li>
+                <button class="navBtn"><a  href="history.html">History</a></button>
+            </li>
+            <li>
+                <button class="navBtn"><a href="help.html">About/Help</a></button>
+            </li>
+        </ul>
+    </nav>
+    <div id="main">
+    <table>
+    	<tr>
+    		<th>Subject</th>
+    		<th>Date Done</th>
+    	</tr>
+    	<tr>
+    		<td></td>
+    		<td></td>
+    	</tr>
+    </table>
+       
+     </div>  
+<footer>
+        HTML5 demo application
+    </footer>
+
+</body>
 
 </html>

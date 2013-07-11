@@ -2,11 +2,16 @@ body {
 	height: 100%;
 	font-family: Arial;
 }
+nav{
+	width: 100%;
+	min-height: 40px;
+}
 nav ul{
 	list-style:none;
 }
 nav li {
-	float: left;
+	/*float: left;*/
+	display:inline-block;
 	clear:right;
 	margin-right: 7px;
 }
@@ -57,4 +62,8 @@ footer {
 	text-align: center;
 	font-family: arial;
 	cursor: pointer;
+}
+
+#CreateWin select{
+	width: 215px;
 }

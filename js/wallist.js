@@ -18,7 +18,6 @@ function readJsonEvents (jsonFile) {
     var data;
      $.ajaxSetup({ async: false });
     $.get(jsonFile,function(events){
-        debugger;
         data=$.parseJSON(events);
     })
         return data;

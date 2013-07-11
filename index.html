@@ -55,32 +55,37 @@
     <footer>
         HTML5 demo application
     </footer>
-    <script type="text/javascript">
-        $(function () {
-           
-        })
-    </script>
-     <div id="CreateWin" title="Create" style="display:none;width:500px;"> 
-        <span>Subject:</span><input data-role="title" ></input>
-        <span>Importance:</span>
-        <select data-bind="options:importance,
-        optionsText:'name',value:'vlaue'"></select>
-        // <script type="text/javascript">
-        // function Importances(){
-        //     this.importance=[
-        //     {name:"Important&Urgent",value:0},
-        //     {name:"Unimportant&Urgent",value:1},
-        //     {name:"Important&Non-urgent",value:2},
-        //     {name:"Unimportant&Non-urgent",value:3}]
-        // }
-        // ko.applyBindings(new ImportanceViewModel(),document.getElementById("dialog"));
-        // </script>
-        <span>Detail:</span><textarea data-role="Detail" rows="4" cols="30" style="max-width:315px;"></textarea>
+    
+ <div id="CreateWin" title="Create" style="display:none;width:500px;"> 
+ <table>
+     <tr>
+         <td>Subject:</td>
+         <td>
+             <input type="text">
+         </td>
+     </tr>
+     <tr>
+         <td>Importance:</td>
+         <td> 
+             <select >
+                <option value="0">Importan&Urgent</option>
+                <option value="1">Importan</option>
+                <option value="2">Urgent</option>
+                <option value="3">Normal</option>
+            </select>
+        </td>
+     </tr>
+     <tr>
+         <td>Detail:</td>
+         <td>
+             <textarea  rows="4" cols="21" style="max-width:210px;"></textarea>
+         </td>
+     </tr>
+ </table>
      </div>  
 <div id="confirmDel" style="display:none;">
     <p>Sure to delete?</p>
 </div>
-
 </body>
 
 </html>
