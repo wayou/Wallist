@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"inli",
+				"inline"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
 				"op",
 				"option	Tag"
 			]
@@ -12,7 +20,15 @@
 	"buffers":
 	[
 		{
-			"file": "/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/js/wallist.js",
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2519,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "js/wallist.js",
 			"settings":
 			{
 				"buffer_size": 4760,
@@ -20,42 +36,26 @@
 			}
 		},
 		{
-			"file": "/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/Wallist.sublime-project",
+			"file": "help.html",
 			"settings":
 			{
-				"buffer_size": 206,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/index.html",
-			"settings":
-			{
-				"buffer_size": 2339,
+				"buffer_size": 1106,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/history.html",
+			"file": "history.html",
 			"settings":
 			{
-				"buffer_size": 1136,
+				"buffer_size": 1124,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/style/style.css",
+			"file": "style/style.css",
 			"settings":
 			{
-				"buffer_size": 809,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/help.html",
-			"settings":
-			{
-				"buffer_size": 1118,
+				"buffer_size": 873,
 				"line_ending": "Windows"
 			}
 		}
@@ -87,8 +87,12 @@
 	},
 	"file_history":
 	[
+		"/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/js/wallist.js",
+		"/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/index.html",
 		"/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/history.html",
 		"/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/style/style.css",
+		"/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/help.html",
+		"/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/Wallist.sublime-project",
 		"/C/Users/Wayou/Desktop/Wallist-HTML5-LocalStorage - Shortcut.lnk"
 	],
 	"find":
@@ -107,6 +111,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"CreateWin",
 			"debugger"
 		],
 		"highlight": true,
@@ -125,12 +130,41 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/js/wallist.js",
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2519,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2357,
+								2357
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1026.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "js/wallist.js",
 					"semi_transient": false,
 					"settings":
 					{
@@ -141,8 +175,8 @@
 						"selection":
 						[
 							[
-								3457,
-								3457
+								3629,
+								3629
 							]
 						],
 						"settings":
@@ -152,53 +186,26 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1583.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/Wallist.sublime-project",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 206,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								115,
-								115
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JSON.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1620.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/index.html",
+					"file": "help.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2339,
+						"buffer_size": 1106,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1606,
-								1606
+								441,
+								441
 							]
 						],
 						"settings":
@@ -208,54 +215,55 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 756.0,
+						"translation.y": 162.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/history.html",
+					"file": "history.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1136,
+						"buffer_size": 1124,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								474,
-								474
+								862,
+								862
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 216.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/style/style.css",
+					"file": "style/style.css",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 809,
+						"buffer_size": 873,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								44,
-								44
+								868,
+								868
 							]
 						],
 						"settings":
@@ -264,35 +272,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "/F/Doc/Projects/My/Wallist-HTML5-LocalStorage/help.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1118,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								382,
-								382
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 162.0,
+						"translation.y": 756.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
