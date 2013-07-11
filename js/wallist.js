@@ -134,10 +134,11 @@ $( "#create" ).button().click(function( e ) {
                 })
                 storeEvents(JSON.stringify(events));
 
-                debugger;
 
                 // save the new event
-             $( this ).dialog( "close" ); }},
+             $( this ).dialog( "close" ); 
+             location.reload();
+         }},
             { text: "CANCEL", click: function() { $( this ).dialog( "close" ); }}] ,
              close: function() {
                 //clear all value before close
