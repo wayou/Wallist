@@ -52,10 +52,12 @@ $(function() {
 
     // var sampleData=readJsonEvents("data/data.json");
     // storeEvents(JSON.stringify(sampleData));
+
     var events=$.parseJSON(localStorage.getItem("events"));
 
 //initial application, read existing events into the page
-for (var i = events.length - 1; i >= 0; i--) {
+if (events!==null) {
+    for (var i = events.length - 1; i >= 0; i--) {
     var px;
     var py;
     var eventDom;
@@ -94,6 +96,9 @@ for (var i = events.length - 1; i >= 0; i--) {
     console.log("Error happened while rendering events");
   }
 
+};
+}else{
+    events=[];
 };
 
 
