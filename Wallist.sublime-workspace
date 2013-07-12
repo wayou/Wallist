@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"new",
+				"newDate"
+			],
+			[
+				"date",
+				"dateDone"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
 				"inli",
 				"inline"
 			],
@@ -23,7 +35,31 @@
 			"file": "js/wallist.js",
 			"settings":
 			{
-				"buffer_size": 6287,
+				"buffer_size": 7516,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "style/style.css",
+			"settings":
+			{
+				"buffer_size": 908,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "history.html",
+			"settings":
+			{
+				"buffer_size": 1950,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "help.html",
+			"settings":
+			{
+				"buffer_size": 1185,
 				"line_ending": "Windows"
 			}
 		}
@@ -55,9 +91,9 @@
 	},
 	"file_history":
 	[
+		"/D/Program Files/Github/Wallist/js/wallist.js",
 		"/D/Program Files/Github/Wallist/README.md",
 		"/D/Program Files/Github/Wallist/index.html",
-		"/D/Program Files/Github/Wallist/js/wallist.js",
 		"/D/Program Files/Github/Wallist/data/data.json",
 		"/D/Program Files/Github/Wallist/help.html",
 		"/D/Program Files/Github/Wallist/history.html",
@@ -86,6 +122,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"debugger",
+			"top",
+			"dop",
+			"\n    ",
+			"storeEvents",
+			"events==",
 			"storeEvents",
 			"CreateWin",
 			"debugger"
@@ -115,15 +157,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 6287,
+						"buffer_size": 7516,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4894,
-								4894
+								3141,
+								3141
 							]
 						],
 						"settings":
@@ -133,7 +175,93 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2556.0,
+						"translation.y": 1439.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "style/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 908,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								906,
+								906
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 700.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "history.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1950,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								582,
+								582
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 216.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "help.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1185,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								461,
+								461
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
