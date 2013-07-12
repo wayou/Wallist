@@ -230,9 +230,9 @@ $(function () {
     });
 
     $(".event").hover(function (e) {
-        $(this).find(".deleteEvent").fadeIn();
+        $(this).find(".deleteEvent").stop().fadeIn();
     }, function (e) {
-        $(this).find(".deleteEvent").fadeOut();
+        $(this).find(".deleteEvent").stop().fadeOut();
     });
 
 });

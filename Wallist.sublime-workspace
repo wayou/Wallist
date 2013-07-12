@@ -35,7 +35,7 @@
 			"file": "js/wallist.js",
 			"settings":
 			{
-				"buffer_size": 7612,
+				"buffer_size": 8991,
 				"line_ending": "Windows"
 			}
 		},
@@ -43,7 +43,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2617,
+				"buffer_size": 2794,
 				"line_ending": "Windows"
 			}
 		},
@@ -51,7 +51,7 @@
 			"file": "style/style.css",
 			"settings":
 			{
-				"buffer_size": 908,
+				"buffer_size": 1160,
 				"line_ending": "Windows"
 			}
 		},
@@ -59,7 +59,7 @@
 			"file": "history.html",
 			"settings":
 			{
-				"buffer_size": 1950,
+				"buffer_size": 2180,
 				"line_ending": "Windows"
 			}
 		},
@@ -67,7 +67,7 @@
 			"file": "help.html",
 			"settings":
 			{
-				"buffer_size": 1185,
+				"buffer_size": 1239,
 				"line_ending": "Windows"
 			}
 		}
@@ -130,6 +130,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"#importance-create",
+			"importance-create",
+			"*",
+			"Cencel",
 			"dialog",
 			"new Date",
 			"removeById",
@@ -159,7 +163,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 2,
 			"sheets":
 			[
 				{
@@ -168,15 +172,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7612,
+						"buffer_size": 8991,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4698,
-								4698
+								8967,
+								8967
 							]
 						],
 						"settings":
@@ -186,7 +190,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2293.0,
+						"translation.y": 3875.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -197,15 +201,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2617,
+						"buffer_size": 2794,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2541,
-								2541
+								1772,
+								1772
 							]
 						],
 						"settings":
@@ -215,7 +219,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1177.0,
+						"translation.y": 790.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -226,15 +230,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 908,
+						"buffer_size": 1160,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								906,
-								906
+								1092,
+								1092
 							]
 						],
 						"settings":
@@ -243,7 +247,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 648.0,
+						"translation.y": 1115.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -254,7 +258,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1950,
+						"buffer_size": 2180,
 						"regions":
 						{
 						},
@@ -283,7 +287,7 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1185,
+						"buffer_size": 1239,
 						"regions":
 						{
 						},

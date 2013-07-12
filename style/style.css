@@ -77,7 +77,8 @@ footer {
 }
 
 #CreateWin select {
-    width: 215px;
+    width: 212px;
+    margin-left: 2px;
 }
 
 .dragIn {
