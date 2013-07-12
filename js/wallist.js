@@ -63,8 +63,6 @@ function removeById(id){
 var events=null;
 //application start
 $(function() {
-    debugger;
-
      // create event
     $("#createWindow").dialog();
     $("#confirmDel").dialog({autoOpen:false});

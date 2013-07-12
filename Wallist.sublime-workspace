@@ -35,7 +35,15 @@
 			"file": "js/wallist.js",
 			"settings":
 			{
-				"buffer_size": 7516,
+				"buffer_size": 7680,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 2617,
 				"line_ending": "Windows"
 			}
 		},
@@ -122,6 +130,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"dialog",
+			"new Date",
+			"removeById",
 			"debugger",
 			"top",
 			"dop",
@@ -148,7 +159,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -157,15 +168,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7516,
+						"buffer_size": 7680,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3141,
-								3141
+								6286,
+								6292
 							]
 						],
 						"settings":
@@ -175,13 +186,42 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1439.0,
+						"translation.y": 2401.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2617,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2541,
+								2541
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1177.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"file": "style/style.css",
 					"semi_transient": false,
 					"settings":
@@ -209,7 +249,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
+					"buffer": 3,
 					"file": "history.html",
 					"semi_transient": false,
 					"settings":
@@ -238,7 +278,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 4,
 					"file": "help.html",
 					"semi_transient": false,
 					"settings":
