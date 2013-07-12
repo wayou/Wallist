@@ -52,7 +52,7 @@ function removeById(id) {
     $.each(events, function (i, item) {
         if (item.id == id) {
             item.status = 1;
-            item.dateDone = (new Date().toString()).substring(0, 24);
+            item.dateDone = (new Date).toLocaleString();
             storeEvents(events);
             $("#" + id).remove();
             console.log("delete success");
@@ -151,7 +151,7 @@ $(function () {
                     var eventSubject = suject.val();
                     var eventImportance = importance.val();
                     var eventDetail = detail.val();
-                    var eventDateCreate = (new Date().toString()).substring(0, 24);
+                    var eventDateCreate = (new Date).toLocaleString();
                     var eventDateDone = "";
                     var eventStatus = "0";
                     events.push({
