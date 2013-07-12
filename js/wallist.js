@@ -52,8 +52,9 @@ function removeById(id){
    $.each(events, function(i, item) {
     if(item.id==id){
         item.status=1;
-        item.dateDone=new Date();
+        item.dateDone=(new Date().toString()).substring(0,24);
         storeEvents(events);
+        $("#"+id).remove();
         console.log("delete success");
         return;
     }
@@ -62,14 +63,20 @@ function removeById(id){
 var events=null;
 //application start
 $(function() {
+    debugger;
+
      // create event
     $("#createWindow").dialog();
     $("#confirmDel").dialog({autoOpen:false});
 
     // var sampleData=readJsonEvents("data/data.json");
     // storeEvents(sampleData);
-
+if (localStorage.getItem("events")=="undefined") {
+    events=[];
+}else{
     events=$.parseJSON(localStorage.getItem("events"));
+};
+
 //initial application, read existing events into the page
 if (events!==null) {
     for (var i = events.length - 1; i >= 0; i--) {
@@ -145,7 +152,7 @@ $( "#create" ).button().click(function( e ) {
                 var eventSubject=suject.val();
                 var eventImportance=importance.val();
                 var eventDetail=detail.val();
-                var eventDateCreate=new Date();
+                var eventDateCreate=(new Date().toString()).substring(0,24);
                 var eventDateDone="";
                 var eventStatus="0";
                 events.push({id:eventId,subject:eventSubject,importance:eventImportance,detail:eventDetail,
@@ -174,7 +181,7 @@ $( ".deleteEvent" ).click(function( e ) {
             buttons: [ { text: "Ok", click: function() {
                  removeById(eventId);
              $( this ).dialog( "close" ); 
-             location.reload();
+            // location.reload();
 
          }},
             { text: "CANCEL", click: function() {
