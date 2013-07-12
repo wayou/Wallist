@@ -17,35 +17,35 @@
                 <button class="navBtn"><a href="index.html">Home</a></button>
             </li>
             <li>
-                <button class="navBtn"><a  href="history.html">History</a></button>
+                <button class="navBtn"><a href="history.html">History</a></button>
             </li>
             <li>
                 <button class="navBtn"><a href="help.html">About/Help</a></button>
             </li>
-            <li style="float:right;">
-                <button id="create" >New</button>
+            <li style="float: right;">
+                <button id="create">New</button>
             </li>
         </ul>
     </nav>
     <div id="main">
-        <table class="eventsTable" style="float:left;">
+        <table class="eventsTable" style="float: left;">
             <tr>
                 <td>
-                    <div id="1" class="section" style="background:#DDD">
+                    <div id="1" class="section" style="background: #DDD">
                     </div>
                 </td>
                 <td>
-                    <div id="0" class="section" style="background:#FFF">
+                    <div id="0" class="section" style="background: #FFF">
                     </div>
                 </td>
             </tr>
             <tr>
                 <td>
-                    <div id="2" class="section" style="background:#BBB">
+                    <div id="2" class="section" style="background: #BBB">
                     </div>
                 </td>
                 <td>
-                    <div id="3" class="section" style="background:#999">
+                    <div id="3" class="section" style="background: #999">
                     </div>
                 </td>
             </tr>
@@ -55,37 +55,37 @@
     <footer>
         HTML5 demo application
     </footer>
-    
- <div id="CreateWin" title="Create" style="display:none;"> 
- <table>
-     <tr>
-         <td><span style="color:red">*</span> Subject:</td>
-         <td>
-             <input id="subject-create" type="text">
-         </td>
-     </tr>
-     <tr>
-         <td>Importance:</td>
-         <td> 
-             <select id="importance-create" >
-                <option value="0">Normal</option>
-                <option value="1">Importan</option>
-                <option value="2">Urgent</option>
-                <option value="3">Importan&Urgent</option>
-            </select>
-        </td>
-     </tr>
-     <tr>
-         <td>Detail:</td>
-         <td>
-             <textarea id="detail-create" rows="4" cols="21" style="max-width:210px;"></textarea>
-         </td>
-     </tr>
- </table>
-     </div>  
-<div id="confirmDel" title="Confirm" style="display:none;">
-    <p>Sure to delete?</p>
-</div>
+
+    <div id="CreateWin" title="New" style="display: none;">
+        <table>
+            <tr>
+                <td>Subject:</td>
+                <td>
+                    <input id="subject-create" title="Required!" type="text">
+                </td>
+            </tr>
+            <tr>
+                <td>Importance:</td>
+                <td>
+                    <select id="importance-create">
+                        <option value="0">Normal</option>
+                        <option value="1">Important</option>
+                        <option value="2">Urgent</option>
+                        <option value="3">Important&Urgent</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Detail:</td>
+                <td>
+                    <textarea id="detail-create" rows="4" cols="21" style="max-width: 210px;"></textarea>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="confirmDel" title="Confirm" style="display: none;">
+        <p>Sure to delete?</p>
+    </div>
 </body>
 
 </html>

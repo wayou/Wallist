@@ -35,7 +35,7 @@
 			"file": "js/wallist.js",
 			"settings":
 			{
-				"buffer_size": 7680,
+				"buffer_size": 7612,
 				"line_ending": "Windows"
 			}
 		},
@@ -159,7 +159,7 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -168,15 +168,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 7680,
+						"buffer_size": 7612,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6286,
-								6292
+								4698,
+								4698
 							]
 						],
 						"settings":
@@ -186,7 +186,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2401.0,
+						"translation.y": 2293.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -243,7 +243,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 700.0,
+						"translation.y": 648.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -261,8 +261,8 @@
 						"selection":
 						[
 							[
-								582,
-								582
+								1735,
+								1735
 							]
 						],
 						"settings":
@@ -272,7 +272,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 216.0,
+						"translation.y": 54.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

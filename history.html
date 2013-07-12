@@ -9,30 +9,30 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/knockout-2.2.1.js"></script>
     <script type="text/javascript">
-var events=null;
+        var events = null;
 
-    $(function  () {
+        $(function () {
 
-		$(".navBtn").button().click(function(e){
-    window.location.href=$(this).find("a").attr("href");
-});
+            $(".navBtn").button().click(function (e) {
+                window.location.href = $(this).find("a").attr("href");
+            });
 
-    events=$.parseJSON(localStorage.getItem("events"));
-var deletedEvents=[];
-$.each(events,function(i,item){
-    if (item.status==1) {
-        deletedEvents.push(item);
-    };
-})
+            events = $.parseJSON(localStorage.getItem("events"));
+            var deletedEvents = [];
+            $.each(events, function (i, item) {
+                if (item.status == 1) {
+                    deletedEvents.push(item);
+                };
+            })
 
-function EventViewModel() {
-    var self = this;
-    // Editable data
-    self.events = ko.observableArray(deletedEvents);
-}
+            function EventViewModel() {
+                var self = this;
+                // Editable data
+                self.events = ko.observableArray(deletedEvents);
+            }
 
-ko.applyBindings(new EventViewModel());
-    })
+            ko.applyBindings(new EventViewModel());
+        })
     </script>
 
 </head>
@@ -43,7 +43,7 @@ ko.applyBindings(new EventViewModel());
                 <button class="navBtn"><a href="index.html">Home</a></button>
             </li>
             <li>
-                <button class="navBtn"><a  href="history.html">History</a></button>
+                <button class="navBtn"><a href="history.html">History</a></button>
             </li>
             <li>
                 <button class="navBtn"><a href="help.html">About/Help</a></button>
@@ -52,12 +52,12 @@ ko.applyBindings(new EventViewModel());
     </nav>
     <div id="main">
         <table>
-        	 <thead>
-                 <tr>
-                <th>Subject</th>
-                <th>Date Create</th>
-                <th>Date Done</th>
-                <th></th>
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Date Create</th>
+                    <th>Date Done</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody data-bind="foreach: events">
@@ -65,11 +65,11 @@ ko.applyBindings(new EventViewModel());
                     <td data-bind="text: subject"></td>
                     <td data-bind="text: dateCreate"></td>
                     <td data-bind="text: dateDone"></td>
-                </tr>    
+                </tr>
             </tbody>
         </table>
-     </div>  
-<footer>
+    </div>
+    <footer>
         HTML5 demo application
     </footer>
 

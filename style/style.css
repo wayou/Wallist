@@ -1,72 +1,85 @@
 body {
-	height: 100%;
-	font-family: Arial;
+    height: 100%;
+    font-family: Arial;
 }
-nav{
-	width: 100%;
-	min-height: 40px;
+
+nav {
+    width: 100%;
+    min-height: 40px;
 }
-nav ul{
-	list-style:none;
-}
-nav li {
-	/*float: left;*/
-	display:inline-block;
-	clear:right;
-	margin-right: 7px;
-}
-nav li a{
-	text-decoration: none;
-}
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav li {
+        /*float: left;*/
+        display: inline-block;
+        clear: right;
+        margin-right: 7px;
+    }
+
+        nav li a {
+            text-decoration: none;
+        }
+
 #main {
-	min-height: 500px;
-	width: 100%;
+    min-height: 500px;
+    width: 100%;
 }
-#main table{
-	width: 100%;
-	height: 100%;
+
+    #main table {
+        width: 100%;
+        height: 100%;
+    }
+
+.section {
+    border: 1px solid black;
+    height: 270px;
+    max-width: 670px;
 }
-.section{
-	border: 1px solid black;
-	height: 270px;
-	max-width: 670px;
-}
+
 footer {
-	text-align: center;
-}
-.event{
-	width: 100px;
-	height: 100px;
-	background: #27BFCB;
-	border:1px solid green;
-	float: left;
-	position: absolute;
-}
-.selected{
-	filter:alpha(opacity=50); opacity:0.5;
-	z-index: 999;
-}
-.top{
-	z-index: 99;
+    text-align: center;
 }
 
-.deleteEvent{
-	display: none;
-	position: absolute;
-	top: 0;
-	right: 0;
-	color: white;
-	background: red;
-	width: 18px;
-	height: 18px;
-	text-align: center;
-	font-family: arial;
-	cursor: pointer;
+.event {
+    width: 100px;
+    height: 100px;
+    background: #27BFCB;
+    border: 1px solid green;
+    float: left;
+    position: absolute;
 }
 
-#CreateWin select{
-	width: 215px;
+.selected {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    z-index: 999;
 }
-.dragIn{
-	border: 1px solid red;
+
+.top {
+    z-index: 99;
+}
+
+.deleteEvent {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background: red;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-family: arial;
+    cursor: pointer;
+}
+
+#CreateWin select {
+    width: 215px;
+}
+
+.dragIn {
+    border: 1px solid red;
 }
