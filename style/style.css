@@ -46,10 +46,12 @@ footer {
 .event {
     width: 100px;
     height: 100px;
+    /*background: #27BFCB;*/
     background: #27BFCB;
     border: 1px solid green;
     float: left;
     position: absolute;
+    overflow: auto;
 }
 
 .selected {

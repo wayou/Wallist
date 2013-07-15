@@ -9,30 +9,80 @@
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/knockout-2.2.1.js"></script>
     <script type="text/javascript">
+function storeEvents(eventsData) {
+    var jsonString = JSON.stringify(eventsData)
+    if ('localStorage' in window && window['localStorage'] !== null) {
+        localStorage.setItem("events", jsonString);
+    } else {
+        alert('This browser does NOT support localStorage');
+    }
+}
+
         var events = null;
 
         $(function () {
+            events = $.parseJSON(localStorage.getItem("events"));
+    $("#confirmDel").dialog({ autoOpen: false });
 
             $(".navBtn").button().click(function (e) {
                 window.location.href = $(this).find("a").attr("href");
             });
 
-            events = $.parseJSON(localStorage.getItem("events"));
+
+
+$("#clear").button().click(function(){
+
+$('#confirmDel').dialog({
+            modal: true,
+            buttons: [{
+                text: "Ok", click: function () {
+                    
+if (events!==null||deletedEvents.length!==0) {
+    events=aliveEvents;
+storeEvents(events);
+}
+
+                    $(this).dialog("close");
+
+window.location.reload();
+
+
+                }
+            },
+            {
+                text: "Cencel", click: function () {
+                    $(this).dialog("close");
+                }
+            }]
+        }).dialog("open");
+
+
+
+});
+
             var deletedEvents = [];
-            $.each(events, function (i, item) {
+            var aliveEvents = [];
+
+            if (events!==null) {
+                 $.each(events, function (i, item) {
                 if (item.status == 1) {
                     deletedEvents.push(item);
+                }else{
+                    aliveEvents.push(item);
                 };
             })
+            };
+           
 
             function EventViewModel() {
                 var self = this;
-                // Editable data
                 self.events = ko.observableArray(deletedEvents);
             }
 
             ko.applyBindings(new EventViewModel());
         })
+
+
     </script>
 
 </head>
@@ -47,6 +97,9 @@
             </li>
             <li>
                 <button class="navBtn"><a href="help.html">About/Help</a></button>
+            </li>
+             <li style="float: right;">
+                <button id="clear">Clear</button>
             </li>
         </ul>
     </nav>
@@ -72,6 +125,9 @@
     <footer>
         HTML5 demo application
     </footer>
+<div id="confirmDel" title="Confirm" style="display: none;">
+        <p>Sure to clear all items in history page?</p>
+    </div>
 
 </body>
 

@@ -89,7 +89,7 @@ $(function () {
                     px = getRandomInt($("#0").offset().left, $("#0").offset().left + $("#0").width() - 100);
                     py = getRandomInt($("#0").offset().top, $("#0").offset().top + $("#0").height() - 100) + 10;
                     eventDom = "<div class='event' id='" + events[i].id + "' title='" + events[i].detail + "' style='position:absolute;left:" + px + "px;top:" + py + "px;'>"
-                   + events[i].subject + "<div class='deleteEvent'>X</div>" + "</div>";
+                   + events[i].subject.substring(0,50) + "<div class='deleteEvent'>X</div>" + "</div>";
                     $("#0").append(eventDom);
                     break;
                 case "1":

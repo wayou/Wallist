@@ -35,7 +35,7 @@
 			"file": "js/wallist.js",
 			"settings":
 			{
-				"buffer_size": 8991,
+				"buffer_size": 8981,
 				"line_ending": "Windows"
 			}
 		},
@@ -51,7 +51,7 @@
 			"file": "style/style.css",
 			"settings":
 			{
-				"buffer_size": 1160,
+				"buffer_size": 1209,
 				"line_ending": "Windows"
 			}
 		},
@@ -59,7 +59,7 @@
 			"file": "history.html",
 			"settings":
 			{
-				"buffer_size": 2180,
+				"buffer_size": 3460,
 				"line_ending": "Windows"
 			}
 		},
@@ -99,6 +99,7 @@
 	},
 	"file_history":
 	[
+		"/D/Program Files/Github/Wallist/README",
 		"/D/Program Files/Github/Wallist/js/wallist.js",
 		"/D/Program Files/Github/Wallist/README.md",
 		"/D/Program Files/Github/Wallist/index.html",
@@ -130,6 +131,12 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"210",
+			"confirmDel",
+			"debugger",
+			"window",
+			"window.",
+			"tostring",
 			"#importance-create",
 			"importance-create",
 			"*",
@@ -163,7 +170,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -172,15 +179,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 8991,
+						"buffer_size": 8981,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								8967,
-								8967
+								213,
+								214
 							]
 						],
 						"settings":
@@ -190,7 +197,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3875.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -208,8 +215,8 @@
 						"selection":
 						[
 							[
-								1772,
-								1772
+								2585,
+								2585
 							]
 						],
 						"settings":
@@ -219,7 +226,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 790.0,
+						"translation.y": 1151.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -230,15 +237,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1160,
+						"buffer_size": 1209,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1092,
-								1092
+								1138,
+								1140
 							]
 						],
 						"settings":
@@ -247,7 +254,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1115.0,
+						"translation.y": 1169.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -258,15 +265,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2180,
+						"buffer_size": 3460,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1735,
-								1735
+								1216,
+								1216
 							]
 						],
 						"settings":
@@ -276,7 +283,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 54.0,
+						"translation.y": 304.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
