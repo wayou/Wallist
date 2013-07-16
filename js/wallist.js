@@ -1,7 +1,6 @@
-// importance:
-// 	il=important longuid
-// 	iu=important urgent
-// 	ul=unimportant longuid
+// No licence at present,feel free to play with
+//Wayou 2013-7-15 21:31:26
+
 //  status 0=under processing
 // 	status 1=done
 
@@ -89,7 +88,7 @@ $(function () {
                     px = getRandomInt($("#0").offset().left, $("#0").offset().left + $("#0").width() - 100);
                     py = getRandomInt($("#0").offset().top, $("#0").offset().top + $("#0").height() - 100) + 10;
                     eventDom = "<div class='event' id='" + events[i].id + "' title='" + events[i].detail + "' style='position:absolute;left:" + px + "px;top:" + py + "px;'>"
-                   + events[i].subject.substring(0,50) + "<div class='deleteEvent'>X</div>" + "</div>";
+                   + events[i].subject + "<div class='deleteEvent'>X</div>" + "</div>";
                     $("#0").append(eventDom);
                     break;
                 case "1":
@@ -202,6 +201,8 @@ $(function () {
     $(".event").draggable({
         containment: $(".eventsTable"),
         start: function (event, ui) {
+            $(".event").removeClass("top");
+           // $(this).addClass("selected top").siblings().removeClass("top");
             $(this).addClass("selected top").siblings().removeClass("top");
         },
         stop: function (event, ui) {

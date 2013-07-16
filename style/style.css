@@ -41,6 +41,8 @@ nav {
 
 footer {
     text-align: center;
+    color: #ccc;
+    font-size: 0.9em;
 }
 
 .event {
@@ -52,6 +54,7 @@ footer {
     position: absolute;
     word-wrap: break-word;
     overflow-x: auto;
+    font-size: 0.9em;
 }
 
 .selected {
@@ -85,4 +88,20 @@ footer {
 
 .dragIn {
     border: 1px solid red;
+}
+
+#historyRec{
+	width: 950px;
+	text-align: center;
+border-collapse:collapse;
+}
+#historyRec,#historyRec td
+{
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+word-wrap: break-word;
+}
+#historyRec tr td:first-child{
+	max-width: 300px;
+	text-align: left;
 }
