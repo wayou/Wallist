@@ -222,7 +222,7 @@ $("#arrow-y").offset({top:topOfArrowY,left:leftOfArrowY});
     $(".navBtn").button().click(function (e) {
         window.location.href = $(this).find("a").attr("href");
     });
-
+ 
     $(".event").draggable({
         containment: $(".eventsTable"),
         start: function (event, ui) {
