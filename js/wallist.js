@@ -62,6 +62,31 @@ function removeById(id) {
 var events = null;
 //application start
 $(function () {
+//append the arrows to the main page
+var topOfArrowX= $("#1").offset().top+$("#1").height()-17;
+var leftOfArrowX= $("#1").offset().left;
+var widthOfArrowX=$("#1").width()*2+10
+
+var topOfArrowY= $("#1").offset().top;
+var leftOfArrowY= $("#1").offset().left+$("#1").width()-14;
+var heightOfArrowY=$("#1").height()*2+12
+$('body').append("<img id='arrow-x' src='style/img/arrow-x.png' style='position:absolute;top:"+topOfArrowX+"px;left:"+leftOfArrowX+"px;width:"+widthOfArrowX+"px;'>");
+$('body').append("<img id='arrow-y' src='style/img/arrow-y.png' style='position:absolute;top:"+topOfArrowY+"px;left:"+leftOfArrowY+"px;height:"+heightOfArrowY+"px!important;'>");
+$("#0").append("<span id='ylabel' style='position:absolute;color:#DDD;font-size:2em;padding-left:15px;'>Important</span>");
+$("#0").append("<span id='xlabel' style='position:absolute;color:#DDD;font-size:2em;padding-left:15px;top:"+($("#1").height()+20)+"px;right:30px;'>Urgent</span>");
+
+window.onresize = function(event) {
+    var topOfArrowX= $("#1").offset().top+$("#1").height()-17;
+var leftOfArrowX= $("#1").offset().left;
+var widthOfArrowX=$("#1").width()*2+10
+
+var topOfArrowY= $("#1").offset().top;
+var leftOfArrowY= $("#1").offset().left+$("#1").width()-14;
+var heightOfArrowY=$("#1").height()*2+12;
+$("#arrow-x").offset({top:topOfArrowX,left:leftOfArrowX});
+$("#arrow-y").offset({top:topOfArrowY,left:leftOfArrowY});
+}
+
     // create event
     $("#createWindow").dialog();
     $("#confirmDel").dialog({ autoOpen: false });

@@ -45,6 +45,17 @@ footer {
     font-size: 0.9em;
 }
 
+.arrow-x{
+	position: absolute;
+	left: 0px;
+	top: 300px;
+}
+
+.arrow-y{
+	position: absolute;
+	top: 60px;
+	left: 50%;
+}
 .event {
     width: 100px;
     height: 100px;
