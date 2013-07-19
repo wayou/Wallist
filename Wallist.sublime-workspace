@@ -47,7 +47,7 @@
 			"file": "js/wallist.js",
 			"settings":
 			{
-				"buffer_size": 9072,
+				"buffer_size": 10467,
 				"line_ending": "Windows"
 			}
 		},
@@ -55,7 +55,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2793,
+				"buffer_size": 2828,
 				"line_ending": "Windows"
 			}
 		},
@@ -63,7 +63,7 @@
 			"file": "style/style.css",
 			"settings":
 			{
-				"buffer_size": 1532,
+				"buffer_size": 1648,
 				"line_ending": "Windows"
 			}
 		},
@@ -143,6 +143,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"readEvents",
 			"removeClass",
 			"210",
 			"confirmDel",
@@ -192,15 +193,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 9072,
+						"buffer_size": 10467,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2881,
-								2881
+								4515,
+								4515
 							]
 						],
 						"settings":
@@ -210,7 +211,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1339.0,
+						"translation.y": 1609.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -221,15 +222,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2793,
+						"buffer_size": 2828,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1998,
-								1998
+								2184,
+								2184
 							]
 						],
 						"settings":
@@ -239,7 +240,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1115.0,
+						"translation.y": 918.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -250,15 +251,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1532,
+						"buffer_size": 1648,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								781,
-								781
+								535,
+								535
 							]
 						],
 						"settings":
@@ -267,7 +268,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 594.0,
+						"translation.y": 324.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -285,8 +286,8 @@
 						"selection":
 						[
 							[
-								2716,
-								2726
+								1963,
+								1963
 							]
 						],
 						"settings":
@@ -296,7 +297,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1672.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

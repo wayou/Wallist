@@ -83,7 +83,7 @@ var widthOfArrowX=$("#1").width()*2+10
 var topOfArrowY= $("#1").offset().top;
 var leftOfArrowY= $("#1").offset().left+$("#1").width()-14;
 var heightOfArrowY=$("#1").height()*2+12;
-$("#arrow-x").offset({top:topOfArrowX,left:leftOfArrowX});
+$("#arrow-x").offset({top:topOfArrowX,left:leftOfArrowX}).css('width',widthOfArrowX+'px');
 $("#arrow-y").offset({top:topOfArrowY,left:leftOfArrowY});
 }
 
