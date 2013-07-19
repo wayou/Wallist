@@ -47,7 +47,7 @@
 			"file": "js/wallist.js",
 			"settings":
 			{
-				"buffer_size": 10467,
+				"buffer_size": 10499,
 				"line_ending": "Windows"
 			}
 		},
@@ -79,7 +79,7 @@
 			"file": "help.html",
 			"settings":
 			{
-				"buffer_size": 1239,
+				"buffer_size": 1335,
 				"line_ending": "Windows"
 			}
 		}
@@ -184,7 +184,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 4,
 			"sheets":
 			[
 				{
@@ -193,15 +193,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10467,
+						"buffer_size": 10499,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4515,
-								4515
+								2832,
+								2832
 							]
 						],
 						"settings":
@@ -211,7 +211,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1609.0,
+						"translation.y": 1105.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -297,7 +297,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1782.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -308,15 +308,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1239,
+						"buffer_size": 1335,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								461,
-								461
+								958,
+								958
 							]
 						],
 						"settings":
@@ -326,7 +326,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 270.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
