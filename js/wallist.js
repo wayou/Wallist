@@ -162,6 +162,7 @@ $("#arrow-y").offset({top:topOfArrowY,left:leftOfArrowY});
         $('#CreateWin').dialog({
             width: 360,
             modal: true,
+            resizable:false,
             buttons: [{
                 text: "Ok", click: function () {
                     //the subject field is required
