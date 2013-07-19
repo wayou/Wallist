@@ -23,6 +23,10 @@ nav {
             text-decoration: none;
         }
 
+        button{
+        	width:100px;
+        }
+
 #main {
     min-height: 500px;
     width: 100%;
