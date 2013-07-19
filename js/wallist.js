@@ -205,6 +205,7 @@ $("#arrow-y").offset({top:topOfArrowY,left:leftOfArrowY});
 
         $('#confirmDel').dialog({
             modal: true,
+            resizable:false,
             buttons: [{
                 text: "Ok", click: function () {
                     removeById(eventId);
@@ -217,7 +218,10 @@ $("#arrow-y").offset({top:topOfArrowY,left:leftOfArrowY});
                 text: "Cancel", click: function () {
                     $(this).dialog("close");
                 }
-            }]
+            }],
+             open:function(event, ui){
+                $(this).parent().find('button')[2].focus();
+            }
         }).dialog("open");
     });
 
