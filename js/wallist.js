@@ -188,7 +188,7 @@ $("#arrow-y").offset({top:topOfArrowY,left:leftOfArrowY});
                     location.reload();
                 }
             },
-            { text: "Cencel", click: function () { $(this).dialog("close"); } }],
+            { text: "Cancel", click: function () { $(this).dialog("close"); } }],
             close: function () {
                 //clear all value before close
                 suject.val("").removeClass("ui-state-error");
@@ -212,7 +212,7 @@ $("#arrow-y").offset({top:topOfArrowY,left:leftOfArrowY});
                 }
             },
             {
-                text: "Cencel", click: function () {
+                text: "Cancel", click: function () {
                     $(this).dialog("close");
                 }
             }]
