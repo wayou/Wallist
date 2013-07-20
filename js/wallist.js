@@ -63,29 +63,35 @@ var events = null;
 //application start
 $(function () {
 //append the arrows to the main page
-var topOfArrowX= $("#1").offset().top+$("#1").height()-17;
-var leftOfArrowX= $("#1").offset().left;
-var widthOfArrowX=$("#1").width()*2+10
+ 
+//   var topOfArrowX= $("#1").offset().top+$("#1").height();
+// var leftOfArrowX= $("#1").offset().left;
+// var widthOfArrowX=$("#1").width()*2+10;
 
-var topOfArrowY= $("#1").offset().top;
-var leftOfArrowY= $("#1").offset().left+$("#1").width()-14;
-var heightOfArrowY=$("#1").height()*2+12
-$('body').append("<img id='arrow-x' src='style/img/arrow-x.png' style='position:absolute;top:"+topOfArrowX+"px;left:"+leftOfArrowX+"px;width:"+widthOfArrowX+"px;'>");
-$('body').append("<img id='arrow-y' src='style/img/arrow-y.png' style='position:absolute;top:"+topOfArrowY+"px;left:"+leftOfArrowY+"px;height:"+heightOfArrowY+"px!important;'>");
-$("#0").append("<span id='ylabel' style='position:absolute;color:#DDD;font-size:2em;padding-left:15px;'>Important</span>");
+// var topOfArrowY= $("#1").offset().top;
+// var leftOfArrowY=$("#1").offset().left+ $("#1").width();
+// var heightOfArrowY=$("#1").height()*2+12
+// $('body').append("<img id='arrow-x' src='style/img/arrow-x.png' style='position:absolute;top:"+topOfArrowX+"px;left:"+leftOfArrowX+"px;width:"+widthOfArrowX+"px;'>");
+// $('body').append("<img id='arrow-y' src='style/img/arrow-y.png' style='position:absolute;top:"+topOfArrowY+"px;left:"+leftOfArrowY+"px;height:"+heightOfArrowY+"px!important;'>");
+ $("#0").append("<span id='ylabel' style='position:absolute;color:#DDD;font-size:2em;padding-left:15px;'>Important</span>");
 $("#0").append("<span id='xlabel' style='position:absolute;color:#DDD;font-size:2em;padding-left:15px;top:"+($("#1").height()+20)+"px;right:30px;'>Urgent</span>");
+$("#1").append("<img id='arrow-y-l' src='style/img/arrow-y-l.png' style='float:right;'/>");
+$("#0").append("<img id='arrow-y-r' src='style/img/arrow-y-r.png' style='float:left;'/>");
+//$("#0").append("<img id='arrow-x-u' src='style/img/arrow-x-u.png' style='position:absolute;right:0;bottom:0;'/>").css('position','relative');
+$("#3").append("<img id='arrow-x-d' src='style/img/arrow-x-d.png' style='float:right;'/>");
+$("#0").append("<img id='arrow-x-u' src='style/img/arrow-x-u.png' style='z-index:222;margin-top:257px;float:right;'/>");
 
-window.onresize = function(event) {
-    var topOfArrowX= $("#1").offset().top+$("#1").height()-17;
-var leftOfArrowX= $("#1").offset().left;
-var widthOfArrowX=$("#1").width()*2+10
+// window.onresize = function(event) {
+//     var topOfArrowX= $("#1").offset().top+$("#1").height()-$("#arrow-x").height()/2;
+// var leftOfArrowX= $("#1").offset().left;
+// var widthOfArrowX=$("#1").width()*2+10;
 
-var topOfArrowY= $("#1").offset().top;
-var leftOfArrowY= $("#1").offset().left+$("#1").width()-14;
-var heightOfArrowY=$("#1").height()*2+12;
-$("#arrow-x").offset({top:topOfArrowX,left:leftOfArrowX}).css('width',widthOfArrowX+'px');
-$("#arrow-y").offset({top:topOfArrowY,left:leftOfArrowY});
-}
+// var topOfArrowY= $("#1").offset().top;
+// var leftOfArrowY= $("#1").offset().left+$("#1").width()-$("#arrow-y").width()/2;
+// var heightOfArrowY=$("#1").height()*2+12;
+// $("#arrow-x").offset({top:topOfArrowX,left:leftOfArrowX}).css('width',widthOfArrowX+'px');
+// $("#arrow-y").offset({top:topOfArrowY,left:leftOfArrowY});
+// }
 
     // create event
     $("#createWindow").dialog();

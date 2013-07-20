@@ -47,7 +47,7 @@
 			"file": "js/wallist.js",
 			"settings":
 			{
-				"buffer_size": 10499,
+				"buffer_size": 11318,
 				"line_ending": "Windows"
 			}
 		},
@@ -55,7 +55,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 2828,
+				"buffer_size": 3240,
 				"line_ending": "Windows"
 			}
 		},
@@ -63,7 +63,7 @@
 			"file": "style/style.css",
 			"settings":
 			{
-				"buffer_size": 1648,
+				"buffer_size": 1805,
 				"line_ending": "Windows"
 			}
 		},
@@ -71,7 +71,7 @@
 			"file": "history.html",
 			"settings":
 			{
-				"buffer_size": 3476,
+				"buffer_size": 3613,
 				"line_ending": "Windows"
 			}
 		},
@@ -79,7 +79,7 @@
 			"file": "help.html",
 			"settings":
 			{
-				"buffer_size": 1335,
+				"buffer_size": 1552,
 				"line_ending": "Windows"
 			}
 		}
@@ -111,6 +111,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Wayou/Desktop/Wallist-master/index.html",
 		"/D/Program Files/Github/Wallist/README",
 		"/D/Program Files/Github/Wallist/js/wallist.js",
 		"/D/Program Files/Github/Wallist/README.md",
@@ -143,6 +144,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"eventsTable",
+			"dialog",
+			"cencel",
 			"readEvents",
 			"removeClass",
 			"210",
@@ -184,7 +188,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -193,15 +197,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 10499,
+						"buffer_size": 11318,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2832,
-								2832
+								2196,
+								2196
 							]
 						],
 						"settings":
@@ -211,7 +215,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1105.0,
+						"translation.y": 1879.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -222,15 +226,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2828,
+						"buffer_size": 3240,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2184,
-								2184
+								889,
+								889
 							]
 						],
 						"settings":
@@ -240,7 +244,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 918.0,
+						"translation.y": 216.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -251,15 +255,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1648,
+						"buffer_size": 1805,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								535,
-								535
+								185,
+								185
 							]
 						],
 						"settings":
@@ -268,7 +272,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 324.0,
+						"translation.y": 918.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -279,15 +283,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3476,
+						"buffer_size": 3613,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1963,
-								1963
+								1497,
+								1497
 							]
 						],
 						"settings":
@@ -297,7 +301,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1782.0,
+						"translation.y": 215.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -308,15 +312,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1335,
+						"buffer_size": 1552,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								958,
-								958
+								192,
+								192
 							]
 						],
 						"settings":
@@ -326,7 +330,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 270.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -402,7 +406,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 177.0,
+	"side_bar_width": 86.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

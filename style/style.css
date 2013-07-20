@@ -1,6 +1,8 @@
 body {
     height: 100%;
     font-family: Arial;
+    min-width: 600px;
+    
 }
 
 nav {
@@ -30,6 +32,7 @@ nav {
 #main {
     min-height: 500px;
     width: 100%;
+    min-width: 600px;
 }
 
     #main table {
@@ -40,7 +43,10 @@ nav {
 .section {
     border: 1px solid black;
     height: 270px;
-    max-width: 670px;
+    /*max-width: 670px;*/
+    width: 49%;
+    min-width: 270px;
+    float: left;
 }
 
 footer {
