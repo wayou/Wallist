@@ -4,6 +4,10 @@ Wallist
 This is a demo application that demonstrate the HTML5 localStorage feature.
 You can create and manage your daily to-do items here.
 
+Screenshot
+-------
+![alt tag](https://github.com/Wayou/Wallist/blob/master/screenshot.png)
+
 How to use:
 -------
 
