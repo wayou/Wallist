@@ -6,7 +6,7 @@ You can create and manage your daily to-do items here.
 
 Screenshot
 -------
-![alt tag](https://github.com/Wayou/Wallist/blob/master/screenshot.png)
+![alt tag](https://raw.github.com/Wayou/wallist/master/screenshot.png)
 
 How to use:
 -------
