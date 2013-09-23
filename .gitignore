@@ -218,3 +218,4 @@ pip-log.txt
 ## Customer
 #############
 *.sublime-workspace
+*.sublime-project
