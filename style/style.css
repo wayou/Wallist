@@ -69,7 +69,7 @@ footer {
 .event {
     width: 100px;
     height: 100px;
-    background: #27BFCB;
+    background: rgb(241,241,241);
     border: 1px solid green;
     float: left;
     position: absolute;
