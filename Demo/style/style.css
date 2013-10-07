@@ -1,0 +1,128 @@
+body {
+    height: 100%;
+    font-family: Arial;
+    min-width: 600px;
+    
+}
+
+nav {
+    width: 100%;
+    min-height: 40px;
+}
+
+    nav ul {
+        list-style: none;
+    }
+
+    nav li {
+        /*float: left;*/
+        display: inline-block;
+        clear: right;
+        margin-right: 7px;
+    }
+
+        nav li a {
+            text-decoration: none;
+        }
+
+        button{
+        	width:100px;
+        }
+
+#main {
+    min-height: 500px;
+    width: 100%;
+    min-width: 600px;
+}
+
+    #main table {
+        width: 100%;
+        height: 100%;
+    }
+
+.section {
+    border: 1px solid black;
+    height: 270px;
+    /*max-width: 670px;*/
+    width: 49%;
+    min-width: 270px;
+    float: left;
+}
+
+footer {
+    text-align: center;
+    color: #ccc;
+    font-size: 0.9em;
+}
+
+.arrow-x{
+	position: absolute;
+	left: 0px;
+	top: 300px;
+}
+
+.arrow-y{
+	position: absolute;
+	top: 60px;
+	left: 50%;
+}
+.event {
+    width: 100px;
+    height: 100px;
+    background: rgb(241,241,241);
+    border: 1px solid green;
+    float: left;
+    position: absolute;
+    word-wrap: break-word;
+    overflow-x: auto;
+    font-size: 0.9em;
+}
+
+.selected {
+    filter: alpha(opacity=50);
+    opacity: 0.5;
+    z-index: 999;
+}
+
+.top {
+    z-index: 99;
+}
+
+.deleteEvent {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: white;
+    background: red;
+    width: 18px;
+    height: 18px;
+    text-align: center;
+    font-family: arial;
+    cursor: pointer;
+}
+
+#CreateWin select {
+    width: 212px;
+    margin-left: 2px;
+}
+
+.dragIn {
+    border: 1px solid red;
+}
+
+#historyRec{
+	width: 950px;
+	text-align: center;
+border-collapse:collapse;
+}
+#historyRec,#historyRec td
+{
+border-top: 1px solid #ddd;
+border-bottom: 1px solid #ddd;
+word-wrap: break-word;
+}
+#historyRec tr td:first-child{
+	max-width: 300px;
+	text-align: left;
+}

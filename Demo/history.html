@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>History
+    </title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/jquery-ui.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/knockout-2.2.1.js"></script>
+    <script type="text/javascript">
+function storeEvents(eventsData) {
+    var jsonString = JSON.stringify(eventsData)
+    if ('localStorage' in window && window['localStorage'] !== null) {
+        localStorage.setItem("events", jsonString);
+    } else {
+        alert('This browser does NOT support localStorage');
+    }
+}
+
+        var events = null;
+
+        $(function () {
+            events = $.parseJSON(localStorage.getItem("events"));
+    $("#confirmDel").dialog({ autoOpen: false });
+
+            $(".navBtn").button().click(function (e) {
+                window.location.href = $(this).find("a").attr("href");
+            });
+
+
+
+$("#clear").button().click(function(){
+
+$('#confirmDel').dialog({
+            modal: true,
+            resizable:false,
+            buttons: [{
+                text: "Ok", click: function () {
+                    
+if (events!==null||deletedEvents.length!==0) {
+    events=aliveEvents;
+storeEvents(events);
+}
+
+                    $(this).dialog("close");
+
+window.location.reload();
+
+
+                }
+            },
+            {
+                text: "Cancel", click: function () {
+                    $(this).dialog("close");
+                }
+            }],
+            open:function(event, ui){
+                $(this).parent().find('button')[2].focus();
+            }
+        }).dialog("open");
+
+
+
+});
+
+            var deletedEvents = [];
+            var aliveEvents = [];
+
+            if (events!==null) {
+                 $.each(events, function (i, item) {
+                if (item.status == 1) {
+                    deletedEvents.push(item);
+                }else{
+                    aliveEvents.push(item);
+                };
+            })
+            };
+           
+
+            function EventViewModel() {
+                var self = this;
+                self.events = ko.observableArray(deletedEvents);
+            }
+
+            ko.applyBindings(new EventViewModel());
+        })
+
+
+    </script>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <button class="navBtn"><a href="index.html">Home</a></button>
+            </li>
+            <li>
+                <button class="navBtn"><a href="history.html">History</a></button>
+            </li>
+            <li>
+                <button class="navBtn"><a href="help.html">About</a></button>
+            </li>
+             <li style="float: right;">
+                <button id="clear">Clear</button>
+            </li>
+        </ul>
+    </nav>
+    <div id="main">
+        <table id="historyRec">
+            <thead>
+                <tr>
+                    <th>Subject</th>
+                    <th>Date Create</th>
+                    <th>Date Done</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: events">
+                <tr>
+                    <td data-bind="text: subject"></td>
+                    <td data-bind="text: dateCreate"></td>
+                    <td data-bind="text: dateDone"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        HTML5 demo application
+    </footer>
+<div id="confirmDel" title="Confirm" style="display: none;">
+        <p>Sure to clear all items in history page?</p>
+    </div>
+
+</body>
+
+</html>

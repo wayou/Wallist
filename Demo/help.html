@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>About/Help
+    </title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/jquery-ui.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript">
+    $(function () {
+        $(".navBtn").button().click(function (e) {
+            window.location.href = $(this).find("a").attr("href");
+        });
+    })
+    </script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <button class="navBtn"><a href="index.html">Home</a></button>
+            </li>
+            <li>
+                <button class="navBtn"><a href="history.html">History</a></button>
+            </li>
+            <li>
+                <button class="navBtn"><a href="help.html">About</a></button>
+            </li>
+        </ul>
+    </nav>
+    <div id="main">
+        <ul>
+            <li>This is a project that demonstrate the HTML5 local storage</li>
+            <li>To contact the author, you can send mails to <a href="mailto:liuwayong@gmail.com" target="_top">
+liuwayong@gmail.com</a></li>
+            <li>View the project on <a href="https://github.com/Wayou/Wallist/">GitHub</a></li>
+        </ul>
+        <ul>
+            <li>Contributers:</li>
+            <ul>
+                <li>Idea: Yee</li>
+                <li>Coder:Wayou</li>
+                <li>Testing:Elaine</li>
+            </ul>
+        </ul>
+        <ul>
+            <li>
+                <h4>Change Log 1.0.1</h4>
+                <ul>
+                    <li>
+                        Change the theme of the main page.
+                    </li>
+                    <li>
+                        Make the operation for create/delete for an item without page refreshing.
+                    </li>
+                    <li>
+                        Optimize some code in the wallist.js.
+                    </li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+        <footer>
+            HTML5 demo application
+        </footer>
+
+    </body>
+
+    </html>

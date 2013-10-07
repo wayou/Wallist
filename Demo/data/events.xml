@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<events>
+  <event>
+    <id>1372661242166</id>
+    <subject>Weekly Meetting</subject>
+    <detail>Weekly Meetting with Mr.Liu</detail>
+    <dateCreate>2013-6-28 17:41:12</dateCreate>
+    <dateDone></dateDone>
+    <status>0</status>
+    <importance>0</importance>
+  </event>
+  <event>
+    <id>1372661242169</id>
+    <subject>Hiking</subject>
+    <detail>Go out</detail>
+    <dateCreate>2013-6-28 17:41:12</dateCreate>
+    <dateDone></dateDone>
+    <status>0</status>
+    <importance>0</importance>
+  </event>
+  <event>
+    <id>1372661242169</id>
+    <subject>Hiking</subject>
+    <detail>Go out</detail>
+    <dateCreate>2013-6-28 17:41:12</dateCreate>
+    <dateDone></dateDone>
+    <status>0</status>
+    <importance>1</importance>
+  </event>
+  <event>
+    <id>1372661242169</id>
+    <subject>Hiking</subject>
+    <detail>Go out</detail>
+    <dateCreate>2013-6-28 17:41:12</dateCreate>
+    <dateDone></dateDone>
+    <status>0</status>
+    <importance>3</importance>
+  </event>
+  <event>
+    <id>1372661242169</id>
+    <subject>Hiking</subject>
+    <detail>Go out</detail>
+    <dateCreate>2013-6-28 17:41:12</dateCreate>
+    <dateDone></dateDone>
+    <status>0</status>
+    <importance>2</importance>
+  </event>
+  <event>
+    <id>1372661242169</id>
+    <subject>Hiking</subject>
+    <detail>Go out</detail>
+    <dateCreate>2013-6-28 17:41:12</dateCreate>
+    <dateDone></dateDone>
+    <status>0</status>
+    <importance>3</importance>
+  </event>
+  <event>
+    <id>1372661242169</id>
+    <subject>Hiking</subject>
+    <detail>Go out</detail>
+    <dateCreate>2013-6-28 17:41:12</dateCreate>
+    <dateDone></dateDone>
+    <status>0</status>
+    <importance>2</importance>
+  </event>
+</events>
