@@ -214,7 +214,7 @@ $(function() {
                     //display the new added item to the page
                     displayEvents(newAddedEventItem);
 
-                    $(".event").draggable({
+                    $("#"+newAddedEventItem.id).draggable({
                         containment: $(".eventsTable"),
                         start: function(event, ui) {
                             $(".event").removeClass("top");
@@ -225,13 +225,14 @@ $(function() {
                             $(this).removeClass("selected");
                         }
                     });
-                    $(".event").hover(function(e) {
+                    $("#"+newAddedEventItem.id).hover(function(e) {
+                        console.log($(".event").length);
                         $(this).find(".deleteEvent").stop().fadeIn();
                     }, function(e) {
                         $(this).find(".deleteEvent").stop().fadeOut();
                     });
 
-                    $(".deleteEvent").click(function(e) {
+                    $("#"+newAddedEventItem.id+" .deleteEvent").click(function(e) {
                         var eventId = $(this).parent().attr("id");
 
                         $('#confirmDel').dialog({
@@ -243,7 +244,6 @@ $(function() {
                                     removeById(eventId);
                                     $(this).dialog("close");
                                     // location.reload();
-
                                 }
                             }, {
                                 text: "Cancel",
