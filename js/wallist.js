@@ -27,7 +27,6 @@ function readJsonEvents(jsonFile) {
     return data;
 }
 // read data from HTML5 local storage
-
 function readEvents() {
     if ('localStorage' in window && window['localStorage'] !== null) {
         window.localStorage.getItem("events");
@@ -69,6 +68,33 @@ function removeById(id) {
     })
 }
 
+function getEventItemById(id){
+    var events = $.parseJSON(localStorage.getItem("events"));
+    var targetItem = {};
+       $.each(events, function(i, item) {
+        if (item.id == id) {
+ targetItem=item;
+        }
+})
+       return targetItem;
+}
+ 
+
+function storePosition(eventItem,x,y) {
+     
+    if (localStorage.getItem("events") == "undefined") return;
+      var events = $.parseJSON(localStorage.getItem("events"));
+       $.each(events, function(i, item) {
+        if (item.id == eventItem.id) {
+            item.x = x;
+            item.y = y;
+            storeEvents(events);
+            console.log("position stored");
+            return;
+        }
+    })
+}   
+
 function displayEvents(eventItem) {
     var px;
     var py;
@@ -79,27 +105,55 @@ function displayEvents(eventItem) {
     //  create draggable item on the page for each event based on the importance
     switch (eventItem.importance) {
         case "0":
-            $("#0").offset();
+if (eventItem.x==-1) {
+     $("#0").offset();
             px = getRandomInt($("#0").offset().left, $("#0").offset().left + $("#0").width() - 100);
             py = getRandomInt($("#0").offset().top, $("#0").offset().top + $("#0").height() - 100) + 10;
+            storePosition(eventItem,px,py);
+}else{
+     px = eventItem.x;
+            py = eventItem.y;
+}
+           
             eventDom = "<div class='event' id='" + eventItem.id + "' title='" + eventItem.detail + "' style='position:absolute;left:" + px + "px;top:" + py + "px;'>" + eventItem.subject + "<div class='deleteEvent'>X</div>" + "</div>";
             $("#0").append(eventDom);
             break;
         case "1":
+        if (eventItem.x==-1) {
             px = getRandomInt($("#1").offset().left, $("#1").offset().left + $("#1").width() - 100);
             py = getRandomInt($("#1").offset().top, $("#1").offset().top + $("#1").height() - 100) + 10;
+            storePosition(eventItem,px,py);
+        }else{
+     px = eventItem.x;
+            py = eventItem.y;
+}
+            
             eventDom = "<div class='event' id='" + eventItem.id + "'title='" + eventItem.detail + "'  style='position:absolute;left:" + px + "px;top:" + py + "px;'>" + eventItem.subject + "<div class='deleteEvent'>X</div>" + "</div>";
             $("#1").append(eventDom);
             break;
         case "2":
-            px = getRandomInt($("#2").offset().left, $("#2").offset().left + $("#2").width() - 100);
+         if (eventItem.x==-1) {
+           px = getRandomInt($("#2").offset().left, $("#2").offset().left + $("#2").width() - 100);
             py = getRandomInt($("#2").offset().top, $("#2").offset().top + $("#2").height() - 100) + 10;
+            storePosition(eventItem,px,py);
+        }else{
+     px = eventItem.x;
+            py = eventItem.y;
+}
+           
             eventDom = "<div class='event' id='" + eventItem.id + "'title='" + eventItem.detail + "'  style='position:absolute;left:" + px + "px;top:" + py + "px;'>" + eventItem.subject + "<div class='deleteEvent'>X</div>" + "</div>";
             $("#2").append(eventDom);
             break;
         case "3":
+          if (eventItem.x==-1) {
             px = getRandomInt($("#3").offset().left, $("#3").offset().left + $("#3").width() - 100);
             py = getRandomInt($("#3").offset().top, $("#3").offset().top + $("#3").height() - 100) + 10;
+            storePosition(eventItem,px,py);
+        }else{
+     px = eventItem.x;
+            py = eventItem.y;
+}
+          
             eventDom = "<div class='event' id='" + eventItem.id + "' title='" + eventItem.detail + "' style='position:absolute;left:" + px + "px;top:" + py + "px;'>" + eventItem.subject + "<div class='deleteEvent'>X</div>" + "</div>";
             $("#3").append(eventDom);
             break;
@@ -202,6 +256,8 @@ $(function() {
                     newAddedEventItem.dateCreate = (new Date).toLocaleString();
                     newAddedEventItem.dateDone = "";
                     newAddedEventItem.status = "0";
+                    newAddedEventItem.x =-1;
+                    newAddedEventItem.y = -1;
                     // events.push({
                     //     id: eventId, subject: eventSubject, importance: eventImportance, detail: eventDetail,
                     //     dateCreate: eventDateCreate, dateDone: eventDateDone, status: eventStatus
@@ -223,6 +279,9 @@ $(function() {
                         },
                         stop: function(event, ui) {
                             $(this).removeClass("selected");
+                            var item= getEventItemById(newAddedEventItem.id);
+                            
+                            storePosition(item,$(this).offset().left,$(this).offset().top);
                         }
                     });
                     $("#"+newAddedEventItem.id).hover(function(e) {
@@ -317,6 +376,8 @@ $(function() {
         },
         stop: function(event, ui) {
             $(this).removeClass("selected");
+             var item= getEventItemById($(this).attr('id'));
+             storePosition(item,$(this).offset().left,$(this).offset().top);
         }
     });
     $(".section").droppable({
