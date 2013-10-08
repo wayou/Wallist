@@ -262,6 +262,12 @@ $(function() {
                     //     id: eventId, subject: eventSubject, importance: eventImportance, detail: eventDetail,
                     //     dateCreate: eventDateCreate, dateDone: eventDateDone, status: eventStatus
                     // })
+                     if (localStorage.getItem("events") !== "undefined") {
+        events = $.parseJSON(localStorage.getItem("events"));
+    };
+    if (events == null) {
+       events = [];
+    };
                     events.push(newAddedEventItem);
                     storeEvents(events);
                     // save the new event
@@ -269,7 +275,6 @@ $(function() {
 
                     //display the new added item to the page
                     displayEvents(newAddedEventItem);
-
                     $("#"+newAddedEventItem.id).draggable({
                         containment: $("#main"),
                         start: function(event, ui) {
