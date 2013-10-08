@@ -215,7 +215,7 @@ $(function() {
                     displayEvents(newAddedEventItem);
 
                     $("#"+newAddedEventItem.id).draggable({
-                        containment: $(".eventsTable"),
+                        containment: $("#main"),
                         start: function(event, ui) {
                             $(".event").removeClass("top");
                             // $(this).addClass("selected top").siblings().removeClass("top");
@@ -309,7 +309,7 @@ $(function() {
     //handle the drag drop and add the close cross to every event item
 
     $(".event").draggable({
-        containment: $(".eventsTable"),
+        containment: $("#main"),
         start: function(event, ui) {
             $(".event").removeClass("top");
             // $(this).addClass("selected top").siblings().removeClass("top");

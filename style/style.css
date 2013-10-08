@@ -30,9 +30,9 @@ nav {
         }
 
 #main {
-    min-height: 500px;
+    min-height: 543px;
     width: 100%;
-    min-width: 600px;
+    min-width: 1004px;
 }
 
     #main table {
@@ -44,7 +44,7 @@ nav {
     border: 1px solid black;
     height: 270px;
     /*max-width: 670px;*/
-    width: 49%;
+    width: 49.8%;
     min-width: 270px;
     float: left;
 }
