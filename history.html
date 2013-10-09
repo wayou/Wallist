@@ -114,14 +114,13 @@ window.location.reload();
                     <th>Subject</th>
                     <th>Date Create</th>
                     <th>Date Done</th>
-                    <th></th>
                 </tr>
             </thead>
             <tbody data-bind="foreach: events">
                 <tr>
-                    <td data-bind="text: subject"></td>
-                    <td data-bind="text: dateCreate"></td>
-                    <td data-bind="text: dateDone"></td>
+                    <td data-bind="text: subject" ></td>
+                    <td data-bind="text: dateCreate" style="width:200px;"></td>
+                    <td data-bind="text: dateDone" style="width:200px;"></td>
                 </tr>
             </tbody>
         </table>
