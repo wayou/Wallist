@@ -22,9 +22,6 @@ Just download the zip file and extract to a target folder, then open the index.h
 
 For now the application not supported in IE when run locally.
 
-> previouslly, there were a XML version of this project, and to run it,
-> you may run the Chrome with the "--enable-file-access-from-files".
-> To do that, just right click the icon of Chrome and select "Property". Then add "--enable-file-access-from-files" to the end of the tartget field.
 
 2.Run it at server:
 
