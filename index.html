@@ -1,81 +1,77 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
+<head>
+    <title>Wallist-TODO management
+    </title>
+    <link rel="stylesheet" type="text/css" href="style/style.css">
+    <link rel="stylesheet" type="text/css" href="style/jquery-ui.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/knockout-2.2.1.js"></script>
+    <script src="js/wallist.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <button class="navBtn"><a href="index.html">Home</a></button>
+            </li>
+            <li>
+                <button class="navBtn"><a href="history.html">History</a></button>
+            </li>
+            <li>
+                <button class="navBtn"><a href="help.html">About</a></button>
+            </li>
+            <li style="float: right;">
+                <button id="create">New</button>
+            </li>
+        </ul>
+    </nav>
+    <div id="main">
+      <div id="1" class="section" style="background:rgb(40,120,241);" >
+      </div>
+      <div id="0" class="section" style="background: rgb(221,75,57);" >
+      </div>
+      <div id="2" class="section" style="background: rgb(2,157,89);">
+      </div>
+      <div id="3" class="section" style="background: rgb(255,191,5);">
+      </div>
 
-  <head>
-    <meta charset='utf-8' />
-    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Wallist : wallist repository" />
+  </div>
+  <footer>
+    HTML5 demo application
+</footer>
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+<div id="CreateWin" title="New" style="display: none;">
+    <table>
+        <tr>
+            <td>Subject:</td>
+            <td>
+                <input id="subject-create" title="Required" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>Importance:</td>
+            <td>
+                <select id="importance-create" value="2">
+                    <option value="2">Normal</option>
+                    <option value="1">Important</option>
+                    <option value="3">Urgent</option>
+                    <option value="0">Important&Urgent</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Detail:</td>
+            <td>
+                <textarea id="detail-create" rows="4" cols="21" style="max-width: 208px;"></textarea>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="confirmDel" title="Confirm" style="display: none;">
+    <p>Sure to delete?</p>
+</div>
+</body>
 
-    <title>Wallist</title>
-  </head>
-
-  <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/Wayou/Wallist-TODOManagement">View on GitHub</a>
-
-          <h1 id="project_title">Wallist-A todo list widget</h1>
-          <h2 id="project_tagline">wallist repository</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/Wayou/Wallist-TODOManagement/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/Wayou/Wallist-TODOManagement/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h1>
-<a name="wallist" class="anchor" href="#wallist"><span class="octicon octicon-link"></span></a>Wallist</h1>
-
-<p>This is a demo application that demonstrate the HTML5 localStorage feature.
-You can create and manage your daily to-do items here.</p>
-
-<h2>
-<a name="online-demo" class="anchor" href="#online-demo"><span class="octicon octicon-link"></span></a>Online Demo</h2>
-
-<p>You can take a look at the <a href="http://wayou.github.io/Wallist/Demo/index.html">online demo</a>.</p>
-
-<h2>
-<a name="how-to-use" class="anchor" href="#how-to-use"><span class="octicon octicon-link"></span></a>How to use:</h2>
-
-<p>Anyway, there are two ways to use this simple APP.</p>
-
-<p>Use locally: Just download the zip file and extract to a target folder, then open the index.html file with Chrome or any other brwosers that support HTML5 localStorage.
-but before you can run it properly, you may run the Chrome with the "--enable-file-access-from-files".</p>
-
-<p>To do that, just right click the icon of Chrome and select "Property". Then add "--enable-file-access-from-files" to the end of the tartget field.</p>
-
-<p>Run it at server:
-That's really simple. Justs copy all files in the "Wallist" folder to the IIS default site folder in "C:\inetpub\wwwroot\", then you can open the APP in the browser. Just visit “http://localhost/index.html”.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Wallist maintained by <a href="https://github.com/Wayou">Wayou</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("Wayou/Wallist-HTML5-localStorage");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
-
-
-  </body>
 </html>
