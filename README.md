@@ -6,7 +6,7 @@ You can create and manage your daily to-do items here.
 
 Online Demo
 -------
-You can take a look at the [online demo](http://wayou.github.io/Wallist/Demo/index.html).
+You can take a look at the [online demo](http://wayou.github.io/Wallist/index.html).
 
 Screenshot
 -------
